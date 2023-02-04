@@ -11,7 +11,6 @@ a {
 }
 body {
   background-color: #e3e3e3;
-  height: 200vh;
 }
 .container {
   max-width: 1400px;
@@ -157,6 +156,7 @@ body {
   display: grid;
   place-items: center;
   transition: all ease 0.2s;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
 }
 .who-am-i .icons i:hover {
   transform: scale(1.1);
@@ -168,4 +168,30 @@ body {
 }
 .col-2 {
   margin-top: -50px;
+}
+
+/* 
+    RESPONSIVE
+ */
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  .who-am-i {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .who-am-i .text {
+    margin-left: 0;
+    width: 80%;
+  }
+  .who-am-i .icons {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+  }
 }
