@@ -254,7 +254,7 @@ section {
     display: block !important;
   }
   #nav {
-    margin-top: -32px;
+    margin-top: 20px;
     flex-direction: column;
     align-items: center;
   }
