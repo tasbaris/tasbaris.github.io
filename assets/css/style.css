@@ -128,9 +128,13 @@ body {
 }
 .who-am-i .text h1 {
   letter-spacing: 2px;
-  font-size: 48px;
+  font-size: 52px;
   color: #f4f7f9;
   margin-bottom: 10px;
+  font-weight: 400;
+}
+.who-am-i .text h3 {
+  font-weight: 700;
 }
 .who-am-i .text p {
   color: #47cf;
