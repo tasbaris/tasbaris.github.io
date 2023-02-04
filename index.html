@@ -23,15 +23,16 @@
             <span>Barış Taş</span>
           </a>
         </div>
-        <nav>
-          <ul>
+        <div class="resp-button"><a onclick="nav()"><i class="fa-solid fa-bars"></a></i></div>
+        <nav id="nav">
+          <ul id="nav-ul">
             <li>
               <i class="fa-sharp fa-solid fa-plus"></i>
-              <a href="#">Ben Kimim ?</a>
+              <a href="#who-am-i">Ben Kimim ?</a>
             </li>
             <li>
               <i class="fa-sharp fa-solid fa-plus"></i>
-              <a href="#">Projelerim</a>
+              <a href="#projects">Projelerim</a>
             </li>
             <li class="drop">
               <i class="fa-sharp fa-solid fa-plus"></i>
@@ -47,6 +48,7 @@
                       QR Code
                     </a>
                   </li>
+                  <!-- <hr style="width: 100%; color: #fff; height: 1px" /> -->
                 </ul>
               </div>
             </li>
@@ -54,8 +56,8 @@
         </nav>
       </div>
     </header>
-    <section class="who-am-i">
-      <div class="text">
+    <section id="who-am-i" class="who-am-i">
+      <div class="text typewriter">
         <h1>Who am I?</h1>
         <h3>Lorem ipsum dolor sit.</h3>
         <p>
@@ -75,6 +77,7 @@
           <i class="fa-brands fa-angular" style="color: #dd0031"></i>
           <i class="fa-brands fa-php" style="color: #777bb3"></i>
           <i class="fa-brands fa-vuejs" style="color: #3fb984"></i>
+          <i class="fa-brands fa-wix" style="color: #d2d2d2"></i>
         </div>
         <div class="col col-3">
           <i class="fa-brands fa-bootstrap" style="color: #8112f5"></i>
@@ -83,6 +86,20 @@
         </div>
       </div>
     </section>
+    <section id="projects" class="projects"></section>
     <footer class="footer"></footer>
+    <script>
+      function nav() {
+        var nav_ul = document.getElementById("nav-ul");
+        var nav = document.getElementById("nav");
+        if (nav_ul.className === "") {
+          nav_ul.className += "responsive";
+          nav.style.display = "flex";
+        } else {
+          nav.style.display = "none"; 
+          nav_ul.className = "";
+        }
+      }
+      </script>
   </body>
 </html>
