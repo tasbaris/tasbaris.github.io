@@ -275,8 +275,6 @@ section {
   .resp-button a {
     cursor: pointer;
     display: inline-block;
-    padding-bottom: 50px;
-    margin-right: 50px;
     font-size: 28px;
     color: #fff;
   }
@@ -289,6 +287,7 @@ section {
     margin-left: 0;
     width: 80%;
   }
+
   .who-am-i .icons {
     width: 100%;
     margin-right: 0;
@@ -297,6 +296,22 @@ section {
   .typewriter h1 {
     animation: typing-mobile 2s steps(40, end),
       blink-caret 0.7s step-end infinite;
+  }
+  .who-am-i .icons i {
+    width: 90px;
+    height: 90px;
+    font-size: 50px;
+  }
+}
+@media screen and (max-height: 830px) {
+  .who-am-i .text h1 {
+    font-size: 36px;
+  }
+  .who-am-i .text h3 {
+    font-size: 16px;
+  }
+  .who-am-i .text p {
+    font-size: 12px;
   }
 }
 .responsive {
