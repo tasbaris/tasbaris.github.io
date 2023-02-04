@@ -142,6 +142,7 @@ body {
   display: flex;
   justify-content: start;
   margin-right: 50px;
+  margin-top: 80px;
 }
 .who-am-i .icons i {
   width: 120px;
@@ -155,6 +156,10 @@ body {
   border-radius: 8px;
   display: grid;
   place-items: center;
+  transition: all ease 0.2s;
+}
+.who-am-i .icons i:hover {
+  transform: scale(1.1);
 }
 .who-am-i .icons .col {
   display: flex;
