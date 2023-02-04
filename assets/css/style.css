@@ -280,7 +280,7 @@ section {
   }
   .who-am-i {
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
     padding-top: 20%;
   }
   .who-am-i .text {
