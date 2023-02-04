@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Baris Tas</title>
+    <title>Baris Tas</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Hi its my website</h1>
-    
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./assets/img/logo.webp" alt="" />
+            <span>Barış Taş</span>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <i class="fa-sharp fa-solid fa-plus"></i>
+              <a href="#">Ben Kimim ?</a>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-plus"></i>
+              <a href="#">Projelerim</a>
+            </li>
+            <li class="drop">
+              <i class="fa-sharp fa-solid fa-plus"></i>
+              <a href="#">Frontend - Mentor</a>
+              <div class="drop-menu">
+                <ul>
+                  <li>
+                    <a class="drop-item" href="./frontend-mentor/qr/index.html">
+                      QR Code
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="who-am-i">
+      <div class="text">
+        <h1>Who am I?</h1>
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur,
+          <br />
+          adipisicing elit. Necessitatibus quia perferendis eum? Reiciendis,
+          minus!
+        </p>
+      </div>
+      <div class="icons">
+        <div class="col col-1">
+          <i class="fa-brands fa-html5" style="color: #e54c21"></i>
+          <i class="fa-brands fa-css3-alt" style="color: #2299f8"></i>
+          <i class="fa-brands fa-js" style="color: #ffdf00"></i>
+        </div>
+        <div class="col col-2">
+          <i class="fa-brands fa-angular" style="color: #dd0031"></i>
+          <i class="fa-brands fa-php" style="color: #777bb3"></i>
+          <i class="fa-brands fa-vuejs" style="color: #3fb984"></i>
+        </div>
+        <div class="col col-3">
+          <i class="fa-brands fa-bootstrap" style="color: #8112f5"></i>
+          <i class="fa-brands fa-react" style="color: #61dbfb"></i>
+          <i class="fa-brands fa-wordpress" style="color: #00769d"></i>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"></footer>
   </body>
 </html>
