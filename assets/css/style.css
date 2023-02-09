@@ -145,7 +145,7 @@ section {
   width: 50%;
   margin-left: 20%;
 }
-.who-am-i .text h1 {
+.who-am-i .text h2 {
   letter-spacing: 2px;
   font-size: 52px;
   color: #f4f7f9;
@@ -199,13 +199,24 @@ section {
   width: 100%;
   height: 100vh;
   background-color: rgb(26, 34, 59);
+  padding: 30px 80px;
+}
+.projects h2{
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 28px;
+  border-radius: 19px;
+  padding: 5px;
+  border-bottom: 4px solid rgb(53, 66, 105);
+  border-left: 4px solid rgb(52, 65, 105);
+  color: #fff;
 }
 
 /* 
     TYPEWRITER EFFECT
 */
 
-.typewriter h1 {
+.typewriter h2 {
   overflow: hidden;
   display: inline-block;
   border-right: 0.1em solid #fff;
@@ -218,7 +229,7 @@ section {
     width: 0;
   }
   to {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -227,7 +238,7 @@ section {
     width: 0;
   }
   to {
-    width: 80%;
+    width: 55%;
   }
 }
 
@@ -293,7 +304,7 @@ section {
     margin-right: 0;
     justify-content: center;
   }
-  .typewriter h1 {
+  .typewriter h2 {
     animation: typing-mobile 2s steps(40, end),
       blink-caret 0.7s step-end infinite;
   }
@@ -304,7 +315,7 @@ section {
   }
 }
 @media screen and (max-height: 830px) {
-  .who-am-i .text h1 {
+  .who-am-i .text h2 {
     font-size: 36px;
   }
   .who-am-i .text h3 {
