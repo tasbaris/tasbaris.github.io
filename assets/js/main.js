@@ -20,7 +20,7 @@ fetch("https://api.github.com/users/tasbaris/repos")
 
     output += "</ul>";
 
-    document.getElementById("projects").innerHTML += output;
+    //document.getElementById("projects").innerHTML += output;
   });
 
 window.addEventListener("scroll", function () {
