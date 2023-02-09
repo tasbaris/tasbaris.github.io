@@ -114,7 +114,7 @@ body {
   background-color: #4646465b;
 }
 .drop:hover .drop-menu {
-  max-height: 400px;
+  max-height: 800px;
 }
 .resp-button {
   display: none;
