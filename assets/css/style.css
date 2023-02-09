@@ -106,9 +106,10 @@ body {
   display: inline-block;
   margin: 0 !important ;
   width: 100%;
-  padding-left: 15px;
+  padding: 5px;
   transition: 0.2s;
   border-radius: 8px;
+  text-align: center;
 }
 .drop-menu ul li a:hover {
   background-color: #4646465b;
