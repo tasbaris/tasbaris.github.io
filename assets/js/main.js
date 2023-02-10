@@ -20,14 +20,3 @@ fetch("https://api.github.com/users/tasbaris/repos")
     document.querySelector(".repo-count").textContent=count.toString()+" adet bulundu!";
   });
 
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".header");
-  if (window.scrollY > 0) {
-    navbar.style.borderBottom = "2px solid rgba(0,0,0,0.3)";
-    navbar.style.backgroundColor = "#37373735";
-  }
-   else {
-    navbar.style.borderBottom = "";
-    navbar.style.backgroundColor = "";
-  }
-});

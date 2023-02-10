@@ -9,6 +9,9 @@
 html {
   scroll-behavior: auto;
 }
+::selection{
+  background-color: #10115a;
+}
 a {
   text-decoration: none;
 }
@@ -88,9 +91,9 @@ body {
   height: auto;
   max-height: 0px;
   overflow: hidden;
-  background-color: #ffffff29;
+  background: linear-gradient(#323395,#10115a);
   border-radius: 0 0 8px 8px;
-  transition: all 1s;
+  transition: all 1.8s;
 }
 .drop-menu ul {
   display: flex;
@@ -102,17 +105,17 @@ body {
   margin: 0;
   transition: 0.2s;
 }
-.drop-menu ul li a {
+.drop-item {
   display: inline-block;
-  margin: 0 !important ;
+  margin: 0;
   width: 100%;
+  line-height: 45px!important;
   padding: 5px;
   transition: 0.2s;
-  border-radius: 8px;
   text-align: center;
 }
-.drop-menu ul li a:hover {
-  background-color: #4646465b;
+.drop-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .drop:hover .drop-menu {
   max-height: 800px;
@@ -120,11 +123,12 @@ body {
 .resp-button {
   display: none;
 }
-
+#hamburger{
+  transition: 500ms all;
+}
 /* 
     WHO-AM-I
 */
-
 html {
   scroll-snap-type: y mandatory;
 }
@@ -152,12 +156,13 @@ section {
   margin-bottom: 10px;
   font-weight: 400;
 }
-.who-am-i .text h3 {
-  font-weight: 700;
-}
 .who-am-i .text p {
+  background-color: #fff;
   color: #47cf;
   font-weight: 500;
+  display: inline-block;
+  padding: 16px;
+  border-radius: 16px;
 }
 .who-am-i .icons {
   width: 50%;
@@ -166,7 +171,7 @@ section {
   margin-right: 50px;
   margin-top: 80px;
 }
-.who-am-i .icons i {
+.who-am-i .icons .icon {
   width: 120px;
   height: 120px;
   text-align: center;
@@ -181,7 +186,7 @@ section {
   transition: all ease 0.2s;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
 }
-.who-am-i .icons i:hover {
+.who-am-i .icons .icon:hover {
   transform: scale(1.1);
 }
 .who-am-i .icons .col {
@@ -203,10 +208,11 @@ section {
 }
 .projects h2{
   margin-top: 80px;
+  padding: 5px;
   font-weight: 700;
   font-size: 28px;
   border-radius: 19px;
-  padding: 5px;
+  padding-left: 15px;
   border-bottom: 4px solid rgb(53, 66, 105);
   border-left: 4px solid rgb(52, 65, 105);
   color: #fff;
@@ -253,11 +259,12 @@ section {
   color: #e3e3e3;
   font-size: 24px;
   text-transform: capitalize;
-  font-weight: 300;
+  font-weight: 500;
 }
 .repo-description{
   color: rgb(37, 159, 159);
   font-size: 16px;
+  font-style: italic;
 }
 .repo-link{
   font-size: 45px;
@@ -289,7 +296,7 @@ section {
     width: 0;
   }
   to {
-    width: 55%;
+    width: 75%;
   }
 }
 
@@ -316,13 +323,13 @@ section {
     display: block !important;
   }
   #nav {
-    margin-top: 20px;
+    margin-top: 18px;
     flex-direction: column;
     align-items: center;
   }
-  #nav ul {
+  #nav{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .logo {
     margin-left: 10px;
@@ -342,7 +349,7 @@ section {
   }
   .who-am-i {
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 20%;
   }
   .who-am-i .text {
@@ -359,7 +366,7 @@ section {
     animation: typing-mobile 2s steps(40, end),
       blink-caret 0.7s step-end infinite;
   }
-  .who-am-i .icons i {
+  .who-am-i .icons .icons {
     width: 90px;
     height: 90px;
     font-size: 50px;
