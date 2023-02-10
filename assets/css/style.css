@@ -224,7 +224,7 @@ section {
 .repos{
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  justify-content: center;
 }
 .repo-card{
   margin-top: 25px;
