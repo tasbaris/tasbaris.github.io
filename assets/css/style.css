@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@
 }
 html {
   scroll-behavior: auto;
+  scroll-snap-type: y mandatory;
 }
 ::selection{
   background-color: #10115a;
@@ -17,6 +19,10 @@ a {
 }
 body {
   background-color: #e3e3e3;
+}
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 .container {
   max-width: 1400px;
@@ -93,7 +99,7 @@ body {
   overflow: hidden;
   background: linear-gradient(#323395,#10115a);
   border-radius: 0 0 8px 8px;
-  transition: all 1.8s;
+  transition: all ease 2s!important;
 }
 .drop-menu ul {
   display: flex;
@@ -129,14 +135,7 @@ body {
 /* 
     WHO-AM-I
 */
-html {
-  scroll-snap-type: y mandatory;
-}
 
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
-}
 .who-am-i {
   display: flex;
   align-items: center;
@@ -157,12 +156,14 @@ section {
   font-weight: 400;
 }
 .who-am-i .text p {
+  font-family: 'Outfit',sans-serif!important;
   background-color: #fff;
+  border-radius: 2px 24px 2px 24px;
+  font-size: 18px;
   color: #47cf;
-  font-weight: 500;
+  font-weight:500;
   display: inline-block;
-  padding: 16px;
-  border-radius: 16px;
+  padding: 10px 12px;
 }
 .who-am-i .icons {
   width: 50%;
