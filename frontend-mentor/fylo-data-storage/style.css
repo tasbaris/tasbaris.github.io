@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("./images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+.card-main{
+    background-color: hsl(228, 56%, 26%);
+    padding: 30px;
+    border-radius: 12px;
+    border-top-right-radius:110px ;
+    width: 100%;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
+
+}
+.card-main .logo{
+    margin-bottom: 30px;
+}
+.icons{
+    display: flex;
+    align-items: stretch;
+}
+.card-main .icon{
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-right: 15px;
+    background-color: hsl(229, 57%, 11%);
+}
+.card-storage{
+    background-color: hsl(228, 56%, 26%);
+    margin-top: 15px;
+    padding: 35px;
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
+}
+.card-storage .description{
+    text-align: center;
+    color: hsl(229, 7%, 55%);
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.card-storage .description .size{
+    font-weight: 700;
+    color: hsl(243, 100%, 93%);
+}
+.card-storage .used-storage{
+    background-color: hsl(229, 57%, 17%);
+    border-radius: 16px;
+    height: 25px;
+    width: 100%;
+    position: relative;
+}
+.card-storage .used-storage::before{
+    content: "";
+    display: inline-block;
+    margin-top: 4px;    
+    margin-left: 4px;
+    width: 70%;
+    height: 17px;
+    border-radius:13px;
+    background: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+}
+.card-storage .used-storage::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 6px;
+    right: calc(30% - 1.8px);
+    width: 13px;
+    height: 13px;
+}
+.card-storage .sizes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:15px;
+    font-weight: 700;
+    color: hsl(243, 100%, 93%);
+    font-size: 14px;
+}
+.card-storage .available-storage{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 80px;
+    background-color: white;
+    border-radius: 12px;
+    right: 25%;
+}
+.available-storage p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color:  hsl(229, 7%, 55%);
+}
+.available-storage span{
+    font-size: 44px;
+    color: hsl(229, 57%, 11%);
+    margin-right: 10px;
+}
+
+
+
+
+
+@media only screen and (min-width:1440px) {
+    body{
+        background-image: url("./images/bg-desktop.png");
+        background-size: contain;
+        background-position: bottom;
+    }
+    .card{
+        flex-direction: row;
+        width: 60%;
+    }
+
+    .card-main{
+        width: 55%;
+        margin-right: 15px;
+    }
+
+    .card-storage .available-storage{
+        right: 5%;
+        top: -50px;
+    }
+    .card-storage .description{
+        text-align: left;
+    }
+
+
+    .available-storage::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 40px 25px 0;
+        border-color: transparent #fff transparent transparent;
+        top: 50px;
+        right: 0;
+    }
+}
