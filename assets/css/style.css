@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 ::selection{
