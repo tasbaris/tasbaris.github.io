@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope',sans-serif;
+    border:0;
+    outline: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(218, 23%, 16%);
+}
+.card{
+    width: 90%;
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin-top: -150px;
+}
+.card h1{
+    margin: 40px 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: hsl(150, 100%, 66%);
+}
+.card q {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    margin: 0 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#btn{
+    position: absolute;
+    bottom: -32px;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    transition: all .2s;
+}
+#btn:hover{
+    box-shadow: 0 0 30px 0 hsl(150, 100%, 66%);
+}
+#btn img{
+    width: 26px;
+    height: 26px;
+}
+.divider{
+    margin-bottom: 60px;
+}
+.divider-m{
+    display: block;
+}
+.divider-d{
+    display: none;
+}
+@media only screen and (min-width:1440px) {
+    .card{
+        width: 520px;
+        margin: 0;
+    }
+    .divider-d{
+        display: block;
+    }
+    .divider-m{
+        display: none;
+    }
+}

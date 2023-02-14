@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute;
+    bottom: 5px; color: hsl(228, 45%, 44%); }
+    .attribution a { color:hsl(150, 100%, 66%) ; }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>ADVICE #<span id="advice-id"></span></h1>
+    <q id="advice-text"></q>
+    <img src="./images/pattern-divider-mobile.svg" alt="Divider" class="divider divider-m">
+    <img src="./images/pattern-divider-desktop.svg" alt="Divider" class="divider divider-d">
+    <button id="btn" onclick="getAdvice()">
+      <img src="./images/icon-dice.svg" alt="Dice">
+    </button>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://tasbaris.github.io"target="_blank">Baris Tas</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
