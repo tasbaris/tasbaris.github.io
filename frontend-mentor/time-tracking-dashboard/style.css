@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(226, 43%, 10%);
+    flex-direction: column;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.active{
+    color: white!important;
+}
+.user{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 16px;
+}
+.user-info{
+    background-color: hsl(246, 80%, 60%);
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 30px;
+}
+.user-info .user-imgBox{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.user-img{
+    width: 100%;
+    height: 100%;
+}
+.user-info h1{
+    color: hsl(236, 100%, 87%);
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 15px;
+}
+.user-info h1 span {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+.user ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.user ul li a{
+    color: hsl(235, 34%, 55%);
+    font-size: 16px;
+    transition: all .2s;
+}
+.user ul li a:hover{
+    color: white;
+}
+.dashboard{
+    display: grid;
+    width: 100%;
+    margin-top: 15px;
+}
+.box{
+    margin: 15px auto;
+    width: 100%;
+    height: 150px;
+    background-color: var(--clr);
+    background-image: var(--img);
+    background-repeat: no-repeat;
+    background-position: right top;
+    border-radius: 16px;
+    position: relative;
+}
+.box-info:hover{
+    background-color: hsl(235, 46%, 35%);
+}
+.box-info{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: hsl(235, 46%, 20%);
+}
+.box-info .title-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-row .box-title{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.box-info .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.time .current-time{
+    font-size: 28px;
+    font-weight: 300;
+    color: #fff;
+    margin: 10px 0;
+}
+.time .last-time{
+    font-size: 16px;
+    color: hsl(235, 34%, 55%);
+}
+
+@media only screen and (min-width:1440px){
+    main{
+        flex-direction: row;
+        width: 1000px;
+    }
+    .user{
+        margin-right: 15px;
+    }
+    .user-info{
+        flex-direction: column;
+        align-items: start;
+    }
+    .user-info h1{
+        margin: 35px 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .user-imgBox{
+        width: 72px!important;
+        height: 72px!important;
+    }
+    .user-info h1 span{
+        font-size: 35px;
+    }
+    .user ul{
+        flex-direction: column;
+        align-items: start;
+    }
+    .user ul li{
+        margin: 8px 0;
+    }
+    .dashboard{
+        grid-template-columns: auto auto auto;
+        margin: 0;
+        width: 1000px;
+    }
+    .box{
+        margin: 15px;
+        width: 90%;
+        height: 210px;  
+    }
+    .box-info .time{
+        flex-direction: column;
+        align-items: start;
+    }
+    .current-time{
+        font-size: 48px!important;
+        margin: 15px 0!important;
+    }
+    .last-time{
+        font-size: 14px!important;
+    }
+    .attribution{
+        position: absolute;bottom: 5px;
+    }
+}
