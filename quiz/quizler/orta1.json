@@ -1,0 +1,94 @@
+[
+    {
+        "id": 0,
+        "question": "Dünya nüfusunun yaklaşık %18'i hangi ülkede yaşıyor?",
+        "options": ["Çin", "ABD", "Hindistan", "Rusya"],
+        "correct": "Hindistan"
+    },
+    {
+        "id": 1,
+        "question": "Karnavalın kökeni hangi ülkeye dayanmaktadır?",
+        "options": ["Brezilya", "İtalya", "Meksika", "Fransa"],
+        "correct": "İtalya"
+    },
+    {
+        "id": 2,
+        "question": "Dünyanın en uzun nehri hangisidir?",
+        "options": ["Nil Nehri", "Amazon Nehri", "Mississippi Nehri", "Çin Nehri"],
+        "correct": "Nil Nehri"
+    },
+    {
+        "id": 3,
+        "question": "Hangi gezegenin güneş sistemindeki bir yılı 88 dünya günüdür?",
+        "options": ["Venüs", "Merkür", "Jüpiter", "Satürn"],
+        "correct": "Merkür"
+    },
+    {
+        "id": 4,
+        "question": "Hangi ülke dünyanın en büyük kahve üreticisidir?",
+        "options": ["Brezilya", "Vietnam", "Kolombiya", "Endonezya"],
+        "correct": "Brezilya"
+    },
+    {
+        "id": 5,
+        "question": "Hangi hayvanın dişi, erkeklerine oranla daha büyük ve güçlüdür?",
+        "options": ["Fil", "Aslan", "Köpek", "Kedi"],
+        "correct": "Fil"
+    },
+    {
+        "id": 6,
+        "question": "Hangi şehir, Venedik kanalları ile ünlüdür?",
+        "options": ["Barselona", "Amsterdam", "Venedik", "Paris"],
+        "correct": "Venedik"
+    },
+    {
+        "id": 7,
+        "question": "Kuantum mekaniği hangi alanda kullanılır?",
+        "options": ["Astrofizik", "Nükleer fizik", "Kriptografi", "Makine öğrenmesi"],
+        "correct": "Nükleer fizik"
+    },
+    {
+        "id": 8,
+        "question": "Hangisi dünyanın en büyük ekonomisidir?",
+        "options": ["ABD", "Çin", "Japonya", "Almanya"],
+        "correct": "ABD"
+    },
+    {
+        "id": 9,
+        "question": "Hangi şehir, Işıklar Şehri olarak da bilinir?",
+        "options": ["Dubai", "Tokyo", "New York", "Paris"],
+        "correct": "Tokyo"
+    },
+    {
+        "id": 10,
+        "question": "Birleşik Krallık'ın resmi olarak oluşturulduğu tarih hangisidir?",
+        "options": [
+            "1707",
+            "1801",
+            "1901",
+            "2001"
+        ],
+        "correct": "1707"
+    },
+    {        "id": 11,        "question": "Fransız İhtilali hangi yıllar arasında gerçekleşmiştir?",        "options": ["1789-1799", "1750-1760", "1800-1810", "1850-1860"],
+        "correct": "1789-1799"
+    },
+    {
+        "id": 12,
+        "question": "Ünlü Alman filozof Immanuel Kant'ın 'Saf Aklın Eleştirisi' adlı eseri hangi yüzyılda yayınlanmıştır?",
+        "options": ["16. yüzyıl", "17. yüzyıl", "18. yüzyıl", "19. yüzyıl"],
+        "correct": "18. yüzyıl"
+    },
+    {
+        "id": 13,
+        "question": "Johann Sebastian Bach hangi müzikal dönemde eserler vermiştir?",
+        "options": ["Barok", "Klasik", "Romantik", "Modern"],
+        "correct": "Barok"
+    },
+    {
+        "id": 14,
+        "question": "Pi sayısı kaçtır?",
+        "options": ["3.14", "2.71", "1.62", "4.56"],
+        "correct": "3.14"
+    }
+]

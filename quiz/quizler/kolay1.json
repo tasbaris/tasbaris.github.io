@@ -1,0 +1,63 @@
+[
+    {
+        "id": 0,
+        "question": "Hangisi Türkiye'nin doğusunda yer alır?",
+        "options": ["İzmir","Adana","Erzurum","Bursa"],
+        "correct": "Erzurum"
+      },
+      {
+        "id": 1,
+        "question": "Kurtuluş Savaşı'nın sona erdiği tarih hangisidir?",
+        "options": ["1918", "1920", "1922", "1923"],
+        "correct": "1922"
+      },
+      {
+        "id": 2,
+        "question": "Hangi gezegen Güneş Sistemi'nde en büyük gezegendir?",
+        "options": ["Merkür", "Jüpiter", "Satürn", "Neptün"],
+        "correct": "Jüpiter"
+      },
+      {
+        "id": 3,
+        "question": "Hangi ülkenin başkenti Stockholm'dür?",
+        "options": ["Norveç", "Finlandiya", "İsveç", "Danimarka"],
+        "correct": "İsveç"
+      },
+      {
+        "id": 4,
+        "question": "Kurtuluş Savaşı'nda Mustafa Kemal Atatürk'ün hangi cephede savaştığı bilinmektedir?",
+        "options": ["Doğu Cephesi", "Güney Cephesi", "Batı Cephesi", "Kuzey Cephesi"],
+        "correct": "Batı Cephesi"
+      },
+      {
+        "id": 5,
+        "question": "Hangi ülke 'Kanguru' ve 'Koala' gibi hayvanlarıyla ünlüdür?",
+        "options": ["İspanya", "Yeni Zelanda", "Avustralya", "Arjantin"],
+        "correct": "Avustralya"
+      },
+      {
+        "id": 6,
+        "question": "Hangi ülke, dünyanın en büyük petrol üreticisi ülkesidir?",
+        "options": ["Suudi Arabistan", "Katar", "Birleşik Arap Emirlikleri", "Kuveyt"],
+        "correct": "Suudi Arabistan"
+      },
+      {
+        "id": 7,
+        "question": "Hangi ülkenin resmi dili İspanyolcadır?",
+        "options": ["Fransa", "Meksika", "Brezilya", "İtalya"],
+        "correct": "Meksika"
+      },
+      {
+        "id": 8,
+        "question": "Hangi yıl Türkiye'de İlkokullar, Ortaokullar ve Liseler arasında 8 yıllık zorunlu eğitim sistemi getirilmiştir?",
+        "options": ["1997", "2002", "2006", "2012"],
+        "correct": "2012"
+      },
+      {
+        "id": 9,
+        "question": "İstanbul'un hangi ilçesi Boğaziçi Köprüsü'nü barındırır?",
+        "options": ["Beşiktaş", "Üsküdar", "Beykoz", "Sarıyer"],
+        "correct": "Sarıyer"
+      }
+]      
+  

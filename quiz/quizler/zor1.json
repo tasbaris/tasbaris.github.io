@@ -1,0 +1,108 @@
+[
+    {
+        "id": 0,
+        "question": "Avrupa'da bulunan en eski üniversite hangisidir?",
+        "options": [
+            "Oxford Üniversitesi",
+            "Paris Üniversitesi",
+            "Padova Üniversitesi",
+            "Bologna Üniversitesi"
+        ],
+        "correct": "Bologna Üniversitesi"
+    },
+    {
+        "id": 1,
+        "question": "Hangi ülke, dünyanın en çok adalara sahip ülkesidir?",
+        "options": [
+            "Endonezya",
+            "Japonya",
+            "Yunanistan",
+            "İsveç"
+        ],
+        "correct": "İsveç"
+    },
+    {
+        "id": 2,
+        "question": "Dünyanın en büyük akarsuyu hangisidir?",
+        "options": [
+            "Nil Nehri",
+            "Amazon Nehri",
+            "Yangtze Nehri",
+            "Kongo Nehri"
+        ],
+        "correct": "Amazon Nehri"
+    },
+    {
+        "id": 3,
+        "question": "Hangi gezegen, Güneş Sistemi'ndeki en büyük volkanik dağına sahiptir?",
+        "options": [
+            "Mars",
+            "Jüpiter",
+            "Venus",
+            "Satürn"
+        ],
+        "correct": "Mars"
+    },
+    {
+        "id": 4,
+        "question": "Hangi yazarın romanları, en çok filme uyarlanan romanlar arasında yer alır?",
+        "options": [
+            "Agatha Christie",
+            "Jules Verne",
+            "Charles Dickens",
+            "Jane Austen"
+        ],
+        "correct": "Agatha Christie"
+    },
+    {
+        "id": 5,
+        "question": "Dünya Sağlık Örgütü'ne (WHO) göre, hangi hastalık dünya genelinde en çok insan ölümüne neden olur?",
+        "options": [
+            "HIV/AIDS",
+            "Tüberküloz",
+            "Malaria",
+            "Kalp hastalıkları"
+        ],
+        "correct": "Kalp hastalıkları"
+    },
+    {
+        "id": 6,
+        "question": "Hangi element, evrendeki en yoğun elementtir?",
+        "options": [
+            "Hidrojen",
+            "Helyum",
+            "Oksijen",
+            "Demir"
+        ],
+        "correct": "Hidrojen"
+    },
+    {
+        "id": 7,
+        "question": "Hangi savaşta en çok insan hayatını kaybetmiştir?",
+        "options": [
+            "Birinci Dünya Savaşı",
+            "İkinci Dünya Savaşı",
+            "Kore Savaşı",
+            "Vietnam Savaşı"
+        ],
+        "correct": "İkinci Dünya Savaşı"
+    },
+    {
+        "id": 8,
+        "question": "Hangisi atmosferde en az bulunan gazdır?",
+        "options": ["Oksijen", "Azot", "Karbondioksit", "Argon"],
+        "correct": "Argon"
+    },
+    {
+        "id": 9,
+        "question": "Türkiye'deki en büyük buzul hangi dağda yer alır?",
+        "options": [
+          "Kazdağı",
+          "Erciyes Dağı",
+          "Ağrı Dağı",
+          "Beydağları"
+        ],
+        "correct": "Ağrı Dağı"
+      }
+]
+      
