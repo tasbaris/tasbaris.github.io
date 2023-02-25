@@ -180,19 +180,19 @@ function levelSelect(){
     let selectedLevel = level.value;
     switch (selectedLevel) {
         case "easy":
-            fetch("./quizler/kolay1.json")
+            fetch("./quizler/kolay1.json",{cache : "no-cache"})
                 .then(response => response.json())
                 .then(data => quizArray = data)
                 .catch(error => console.error(error));
             break;
         case "medium":
-            fetch("./quizler/orta1.json")
+            fetch("./quizler/orta1.json",{cache : "no-cache"})
                 .then(response => response.json())
                 .then(data => quizArray = data)
                 .catch(error => console.error(error));
             break;
         case "hard":
-            fetch("./quizler/zor1.json")
+            fetch("./quizler/zor1.json",{cache : "no-cache"})
                 .then(response => response.json())
                 .then(data => quizArray = data)
                 .catch(error => console.error(error));
