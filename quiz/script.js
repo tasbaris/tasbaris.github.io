@@ -42,7 +42,7 @@ nextBtn.addEventListener("click",(displayNext = () =>{
         //hide question container and display score
         displayContainer.classList.add("hide");
         scoreContainer.classList.add("hide");
-        scoreContainer.classList.remove("hide");
+        exit.classList.add("hide");
         //user score
         userScore.innerHTML = questionCount + " soruda "+scoreCount+ " doğru cevapladınız!";
     }
