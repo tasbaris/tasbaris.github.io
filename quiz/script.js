@@ -41,6 +41,7 @@ nextBtn.addEventListener("click",(displayNext = () =>{
     if (questionCount == quizArray.length){
         //hide question container and display score
         displayContainer.classList.add("hide");
+        scoreContainer.classList.add("hide");
         scoreContainer.classList.remove("hide");
         //user score
         userScore.innerHTML = questionCount + " soruda "+scoreCount+ " doğru cevapladınız!";
