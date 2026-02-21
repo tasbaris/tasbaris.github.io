@@ -1,159 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="pDolSw3FT16eIYp1Ta5Cgvi42Kn1GN3l0dtVSlc78aA" />
-    <title>Baris Tas</title>
-    <link rel="shortcut icon" href="./assets/img/fav.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="./assets/img/logo.webp" alt="Logo" />
-            <h1>Barış Taş</h1>
-          </a>
-        </div>
-        <div class="resp-button"><a onclick="nav()"><i id="hamburger" class="fa-solid fa-bars"></i></a></div>
-        <nav id="nav">
-          <ul id="nav-ul">
-            <li>
-              <i class="fa-sharp fa-solid fa-plus"></i>
-              <a href="#who-am-i">Ben Kimim ?</a>
-            </li>
-            <li>
-              <i class="fa-sharp fa-solid fa-plus"></i>
-              <a href="#projects">Projelerim</a>
-            </li>
-            <li>
-              <i class="fa-sharp fa-solid fa-plus"></i>
-              <a href="./quiz/index.html">Quiz</a>
-            </li>
-            <li class="drop">
-              <i class="fa-sharp fa-solid fa-plus"></i>
-              <a href="#">Frontend - Mentor</a>
-              <div class="drop-menu">
-                <ul>
-                  <li>
-                    <a
-                      target="_blank"
-                      class="drop-item"
-                      href="./frontend-mentor/qr/index.html"
-                    >
-                      QR Code
-                    </a>
-                  </li>
-                  <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                  <li>
-                    <a
-                      target="_blank"
-                      class="drop-item"
-                      href="./frontend-mentor/order-summary/index.html"
-                    >
-                      Order - Summary
-                    </a>
-                  </li>
-                  <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                  <li>
-                    <a
-                      target="_blank"
-                      class="drop-item"
-                      href="./frontend-mentor/product-preview-card/index.html"
-                    >
-                      Product Preview Card
-                    </a>
-                  </li>
-                  <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                  <li>
-                    <a
-                      target="_blank"
-                      class="drop-item"
-                      href="./frontend-mentor/nft-preview-card/index.html"
-                    >
-                      NFT Preview Card
-                    </a>
-                  </li>
-                  <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                  <li>
-                    <a
-                      target="_blank"
-                      class="drop-item"
-                      href="./frontend-mentor/fylo-data-storage/index.html"
-                    >
-                      Fylo Data Storage
-                    </a>
-                  </li>
-                  <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                  <li>
-                    <a
-                      target="_blank"
-                      class="drop-item"
-                      href="./frontend-mentor/time-tracking-dashboard/index.html"
-                    >
-                      Time Tracking Dashboard
-                    </a>
-                  </li>
-                  <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                  <li>
-                    <a
-                      target="_blank"
-                      class="drop-item"
-                      href="./frontend-mentor/advice-generator-app/index.html"
-                    >
-                      Advice Generator App
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="pDolSw3FT16eIYp1Ta5Cgvi42Kn1GN3l0dtVSlc78aA" />
+  <title>Baris Tas</title>
+  <link rel="shortcut icon" href="./assets/img/fav.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/img/logo.webp" alt="Logo" />
+          <h1>Barış Taş</h1>
+        </a>
       </div>
-    </header>
-    <section id="who-am-i" class="who-am-i">
-      <div class="text typewriter">
-        <h2>Ben Kimim?</h2>
-        <br>
-        <p>Full-Stack Developer, Mobile Developer</p>
+      <div class="resp-button"><a onclick="nav()"><i id="hamburger" class="fa-solid fa-bars"></i></a></div>
+      <nav id="nav">
+        <ul id="nav-ul">
+          <li>
+            <i class="fa-sharp fa-solid fa-plus"></i>
+            <a href="#who-am-i">Ben Kimim ?</a>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-plus"></i>
+            <a href="#projects">Projelerim</a>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-plus"></i>
+            <a href="./quiz/index.html">Quiz</a>
+          </li>
+          <li class="drop">
+            <i class="fa-sharp fa-solid fa-plus"></i>
+            <a href="#">Frontend - Mentor</a>
+            <div class="drop-menu">
+              <ul>
+                <li>
+                  <a target="_blank" class="drop-item" href="./frontend-mentor/qr/index.html">
+                    QR Code
+                  </a>
+                </li>
+                <hr style="width: 100%; color: #ffffff90; height: 1px" />
+                <li>
+                  <a target="_blank" class="drop-item" href="./frontend-mentor/order-summary/index.html">
+                    Order - Summary
+                  </a>
+                </li>
+                <hr style="width: 100%; color: #ffffff90; height: 1px" />
+                <li>
+                  <a target="_blank" class="drop-item" href="./frontend-mentor/product-preview-card/index.html">
+                    Product Preview Card
+                  </a>
+                </li>
+                <hr style="width: 100%; color: #ffffff90; height: 1px" />
+                <li>
+                  <a target="_blank" class="drop-item" href="./frontend-mentor/nft-preview-card/index.html">
+                    NFT Preview Card
+                  </a>
+                </li>
+                <hr style="width: 100%; color: #ffffff90; height: 1px" />
+                <li>
+                  <a target="_blank" class="drop-item" href="./frontend-mentor/fylo-data-storage/index.html">
+                    Fylo Data Storage
+                  </a>
+                </li>
+                <hr style="width: 100%; color: #ffffff90; height: 1px" />
+                <li>
+                  <a target="_blank" class="drop-item" href="./frontend-mentor/time-tracking-dashboard/index.html">
+                    Time Tracking Dashboard
+                  </a>
+                </li>
+                <hr style="width: 100%; color: #ffffff90; height: 1px" />
+                <li>
+                  <a target="_blank" class="drop-item" href="./frontend-mentor/advice-generator-app/index.html">
+                    Advice Generator App
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" class="drop-item" href="./frontend-mentor/blog-preview/index.html">
+                    Blog Preview Card
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="who-am-i" class="who-am-i">
+    <div class="text typewriter">
+      <h2>Ben Kimim?</h2>
+      <br>
+      <p>Full-Stack Developer, Mobile Developer</p>
+    </div>
+    <div class="icons">
+      <div class="col col-1">
+        <i class="fa-brands fa-html5 icon" style="color: #e54c21"></i>
+        <i class="fa-brands fa-css3-alt icon" style="color: #2299f8"></i>
+        <i class="fa-brands fa-js icon" style="color: #ffdf00"></i>
       </div>
-      <div class="icons">
-        <div class="col col-1">
-          <i class="fa-brands fa-html5 icon" style="color: #e54c21"></i>
-          <i class="fa-brands fa-css3-alt icon" style="color: #2299f8"></i>
-          <i class="fa-brands fa-js icon" style="color: #ffdf00"></i>
-        </div>
-        <div class="col col-2">
-          <i class="fa-brands fa-angular icon" style="color: #dd0031"></i>
-          <i class="fa-brands fa-php icon" style="color: #777bb3"></i>
-          <img src="./assets/img/flutter.png" alt="flutter" class="icon">
-          <img src="./assets/img/CSharp.png" alt="C#" class="icon">
-        </div>
-        <div class="col col-3">
-          <i class="fa-brands fa-bootstrap icon" style="color: #8316F7"></i>
-          <i class="fa-brands fa-react icon" style="color: #61dbfb"></i>
-          <i class="fa-brands fa-wordpress icon" style="color: #00769d"></i>
-        </div>
+      <div class="col col-2">
+        <i class="fa-brands fa-angular icon" style="color: #dd0031"></i>
+        <i class="fa-brands fa-php icon" style="color: #777bb3"></i>
+        <img src="./assets/img/flutter.png" alt="flutter" class="icon">
+        <img src="./assets/img/CSharp.png" alt="C#" class="icon">
       </div>
-    </section>
-    <section id="projects" class="projects">
-      <h2>Projelerim</h2>
-      <p class="repo-count"></p>
-      <div id="repos" class="repos">
+      <div class="col col-3">
+        <i class="fa-brands fa-bootstrap icon" style="color: #8316F7"></i>
+        <i class="fa-brands fa-react icon" style="color: #61dbfb"></i>
+        <i class="fa-brands fa-wordpress icon" style="color: #00769d"></i>
       </div>
-    </section>
-    <footer class="footer"></footer>
-    <script src="./assets/js/func.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </body>
+    </div>
+  </section>
+  <section id="projects" class="projects">
+    <h2>Projelerim</h2>
+    <p class="repo-count"></p>
+    <div id="repos" class="repos">
+    </div>
+  </section>
+  <footer class="footer"></footer>
+  <script src="./assets/js/func.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
