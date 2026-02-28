@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,29 +8,37 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   scrollbar-width: thin;
 }
-::selection{
+
+::selection {
   background-color: #10115a;
+  color: white;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
   background-color: #e3e3e3;
 }
+
 section {
   scroll-snap-align: start;
   scroll-snap-stop: normal;
 }
+
 .container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
+
 /* 
       HEADER
  */
@@ -53,38 +62,45 @@ section {
   display: flex;
   align-items: center;
 }
+
 .logo a h1 {
   font-size: 22px;
   color: #f4f7f9;
   margin-left: 25px;
   font-weight: 400;
 }
+
 .logo img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: 16px;
 }
 
 .header .container nav ul {
   display: flex;
   align-items: center;
 }
+
 .header .container nav ul li a {
   display: inline-block;
   margin-right: 25px;
   line-height: 80px;
   color: #f4f7f9;
 }
+
 .header nav ul li {
   transition: all ease 0.2s;
 }
+
 .header nav ul li i {
   opacity: 0;
   font-size: 18px;
   transition: 200ms all;
   color: #f4f7f9;
 }
+
 .header ul li:hover i {
   opacity: 1;
 }
@@ -92,6 +108,7 @@ section {
 .drop {
   position: relative;
 }
+
 .drop-menu {
   top: 80px;
   position: absolute;
@@ -99,42 +116,50 @@ section {
   height: auto;
   max-height: 0px;
   overflow: hidden;
-  background: linear-gradient(#323395,#10115a);
+  background: linear-gradient(#323395, #10115a);
   border-radius: 0 0 8px 8px;
   border: 1px solid rgba(255, 255, 255, .5);
-  transition: all ease 2s!important;
+  transition: all ease 2s !important;
 }
+
 .drop-menu ul {
   display: flex;
   flex-direction: column;
   transition: 0.2s;
 }
+
 .drop-menu ul li {
   width: 100%;
   margin: 0;
   transition: 0.2s;
 }
+
 .drop-item {
   display: inline-block;
   margin: 0;
   width: 100%;
-  line-height: 20px!important;
+  line-height: 20px !important;
   padding: 20px;
   transition: 0.2s;
   text-align: center;
 }
+
 .drop-item:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .drop:hover .drop-menu {
   max-height: 800px;
 }
+
 .resp-button {
   display: none;
 }
-#hamburger{
+
+#hamburger {
   transition: 500ms all;
 }
+
 /* 
     WHO-AM-I
 */
@@ -147,10 +172,12 @@ section {
   height: 100vh;
   background: linear-gradient(#323395, #10115a);
 }
+
 .who-am-i .text {
   width: 50%;
   margin-left: 20%;
 }
+
 .who-am-i .text h2 {
   letter-spacing: 2px;
   font-size: 52px;
@@ -158,16 +185,18 @@ section {
   margin-bottom: 10px;
   font-weight: 400;
 }
+
 .who-am-i .text p {
-  font-family: 'Outfit',sans-serif!important;
+  font-family: 'Outfit', sans-serif !important;
   background-color: #fff;
   border-radius: 2px 24px 2px 24px;
   font-size: 18px;
   color: #47cf;
-  font-weight:500;
+  font-weight: 500;
   display: inline-block;
   padding: 10px 12px;
 }
+
 .who-am-i .icons {
   width: 50%;
   display: flex;
@@ -175,6 +204,7 @@ section {
   margin-right: 50px;
   margin-top: 80px;
 }
+
 .who-am-i .icons .icon {
   width: 120px;
   height: 120px;
@@ -190,17 +220,21 @@ section {
   transition: all ease 0.2s;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
 }
+
 .who-am-i .icons .icon:hover {
   transform: scale(1.1);
 }
+
 .who-am-i .icons .col {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .col-2 {
   margin-top: -50px;
 }
+
 /*
     Projects 
 */
@@ -210,7 +244,8 @@ section {
   background-color: rgb(26, 34, 59);
   padding: 30px 80px;
 }
-.projects h2{
+
+.projects h2 {
   margin-top: 80px;
   padding: 5px;
   font-weight: 700;
@@ -224,19 +259,21 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-.projects .repo-count{
+
+.projects .repo-count {
   margin-top: 15px;
   font-size: 18px;
   font-style: italic;
   color: #8db1ff;
 }
 
-.repos{
+.repos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.repo-card{
+
+.repo-card {
   margin-top: 25px;
   margin-right: 25px;
   background-color: #323395;
@@ -248,32 +285,38 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-.repo-img{
+
+.repo-img {
   width: 62px;
   height: 62px;
   border-radius: 50%;
   border: 2px solid #8db1ff;
   object-fit: cover;
 }
-.repo-info{
+
+.repo-info {
   margin: 0 15px;
   width: 100%;
 }
-.repo-name{
+
+.repo-name {
   color: #e3e3e3;
   font-size: 24px;
   text-transform: capitalize;
   font-weight: 500;
 }
-.repo-description{
+
+.repo-description {
   color: rgb(37, 159, 159);
   font-size: 16px;
   font-style: italic;
 }
-.repo-link{
+
+.repo-link {
   font-size: 45px;
   color: #8db1ff;
 }
+
 /* 
     TYPEWRITER EFFECT
 */
@@ -290,6 +333,7 @@ section {
   from {
     width: 0;
   }
+
   to {
     width: 45%;
   }
@@ -299,19 +343,94 @@ section {
   from {
     width: 0;
   }
+
   to {
     width: 75%;
   }
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #fff;
   }
+}
+
+/* 
+    BLOG
+*/
+
+.blog {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(26, 34, 59);
+  padding: 30px 80px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.blog h2 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 56px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-card {
+  background-color: #7876bd;
+  width: 25%;
+  height: auto;
+  border-radius: 16px;
+
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 15px 20px;
+}
+
+.blog-card-content h3 {
+  font-size: 24px;
+  color: #10115a;
+  margin-bottom: 10px;
+}
+
+.blog-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.blog-card-footer a {
+  color: #10115a;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 36px;
+  padding: 4px 8px;
+  border: #10115a 2px solid;
+}
+.blog-card-footer a:hover {
+  background-color: #10115a;
+  color : #d0caca;
 }
 
 /* 
@@ -323,39 +442,47 @@ section {
     display: none;
     transition: 200ms all;
   }
+
   .header .container {
     display: block !important;
   }
+
   #nav {
     margin-top: 18px;
     flex-direction: column;
     align-items: center;
   }
-  #nav{
+
+  #nav {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
   }
+
   .logo {
     margin-left: 10px;
     margin-right: 40%;
     display: inline-block;
   }
+
   .resp-button {
     display: block;
     margin-top: -60px;
     margin-left: 85%;
   }
+
   .resp-button a {
     cursor: pointer;
     display: inline-block;
     font-size: 28px;
     color: #fff;
   }
+
   .who-am-i {
     flex-direction: column;
     min-height: 100vh;
     padding-top: 20%;
   }
+
   .who-am-i .text {
     margin-left: 0;
     width: 80%;
@@ -366,42 +493,60 @@ section {
     margin-right: 0;
     justify-content: center;
   }
+
   .typewriter h2 {
     animation: typing-mobile 2s steps(40, end),
       blink-caret 0.7s step-end infinite;
   }
+
   .who-am-i .icons .icons {
     width: 90px;
     height: 90px;
     font-size: 50px;
   }
-  .projects{
+
+  .projects {
     padding: 40px 10px;
   }
-  .repos{
+
+  .repos {
     align-items: center;
   }
-  .repo-card{
+
+  .repo-card {
     margin-right: 0;
+    margin: 10px 30px;
   }
-  .repo-name{
+
+  .repo-name {
     font-size: 18px;
   }
-  .repo-description{
+
+  .repo-description {
     font-size: 14px;
   }
+  .blog-card{
+    width: 100%;
+  }
+
+
 }
+
 @media screen and (max-height: 830px) {
   .who-am-i .text h2 {
     font-size: 36px;
   }
+
   .who-am-i .text h3 {
     font-size: 16px;
   }
+
   .who-am-i .text p {
     font-size: 12px;
   }
+  
 }
+
 .responsive {
   display: flex;
   flex-direction: column;
