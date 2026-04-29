@@ -1,158 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="pDolSw3FT16eIYp1Ta5Cgvi42Kn1GN3l0dtVSlc78aA" />
-  <title>Baris Tas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barış Taş | Software Developer</title>
   <link rel="shortcut icon" href="./assets/img/fav.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="./assets/img/logo.webp" alt="Logo" />
-          <h1>Barış Taş</h1>
-        </a>
-      </div>
-      <div class="resp-button"><a onclick="nav()"><i id="hamburger" class="fa-solid fa-bars"></i></a></div>
-      <nav id="nav">
-        <ul id="nav-ul">
-          <li>
-            <i class="fa-sharp fa-solid fa-plus"></i>
-            <a href="#who-am-i">Ben Kimim ?</a>
-          </li>
-          <li>
-            <i class="fa-sharp fa-solid fa-plus"></i>
-            <a href="#projects">Projelerim</a>
-          </li>
-          <li>
-            <i class="fa-sharp fa-solid fa-plus"></i>
-            <a href="#blog">Blog</a>
-          </li>
-          <li>
-            <i class="fa-sharp fa-solid fa-plus"></i>
-            <a href="./quiz/index.html">Quiz</a>
-          </li>
-          <li class="drop">
-            <i class="fa-sharp fa-solid fa-plus"></i>
-            <a href="#">Frontend - Mentor</a>
-            <div class="drop-menu">
-              <ul>
-                <li>
-                  <a target="_blank" class="drop-item" href="./frontend-mentor/qr/index.html">
-                    QR Code
-                  </a>
-                </li>
-                <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                <li>
-                  <a target="_blank" class="drop-item" href="./frontend-mentor/order-summary/index.html">
-                    Order - Summary
-                  </a>
-                </li>
-                <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                <li>
-                  <a target="_blank" class="drop-item" href="./frontend-mentor/product-preview-card/index.html">
-                    Product Preview Card
-                  </a>
-                </li>
-                <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                <li>
-                  <a target="_blank" class="drop-item" href="./frontend-mentor/nft-preview-card/index.html">
-                    NFT Preview Card
-                  </a>
-                </li>
-                <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                <li>
-                  <a target="_blank" class="drop-item" href="./frontend-mentor/fylo-data-storage/index.html">
-                    Fylo Data Storage
-                  </a>
-                </li>
-                <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                <li>
-                  <a target="_blank" class="drop-item" href="./frontend-mentor/time-tracking-dashboard/index.html">
-                    Time Tracking Dashboard
-                  </a>
-                </li>
-                <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                <li>
-                  <a target="_blank" class="drop-item" href="./frontend-mentor/advice-generator-app/index.html">
-                    Advice Generator App
-                  </a>
-                </li>
-                <hr style="width: 100%; color: #ffffff90; height: 1px" />
-                <li>
-                  <a target="_blank" class="drop-item" href="./frontend-mentor/blog-preview/index.html">
-                    Blog Preview Card
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section id="who-am-i" class="who-am-i">
-    <div class="text typewriter">
-      <h2>Ben Kimim?</h2>
-      <br>
-      <p>Junior Developer</p>
-    </div>
-    <div class="icons">
-      <div class="col col-1">
-        <i class="fa-brands fa-html5 icon" style="color: #e54c21"></i>
-        <i class="fa-brands fa-css3-alt icon" style="color: #2299f8"></i>
-        <i class="fa-brands fa-js icon" style="color: #ffdf00"></i>
-      </div>
-      <div class="col col-2">
-        <i class="fa-brands fa-angular icon" style="color: #dd0031"></i>
-        <i class="fa-brands fa-php icon" style="color: #777bb3"></i>
-        <img src="./assets/img/flutter.png" alt="flutter" class="icon">
-        <img src="./assets/img/CSharp.png" alt="C#" class="icon">
-      </div>
-      <div class="col col-3">
-        <i class="fa-brands fa-bootstrap icon" style="color: #8316F7"></i>
-        <i class="fa-brands fa-react icon" style="color: #61dbfb"></i>
-        <i class="fa-brands fa-wordpress icon" style="color: #00769d"></i>
-      </div>
-    </div>
-  </section>
-  <section id="projects" class="projects">
-    <h2>Projelerim</h2>
-    <p class="repo-count"></p>
-    <div id="repos" class="repos">
-    </div>
-  </section>
-  <section id="blog" class="blog">
-    <h2>Blog</h2>
-    <div class="cards">
-      <div class="blog-card">
-        <div class="blog-card-image">
-          <img src="/blog/img/md5-sifreleme.webp" alt="blog1">
-        </div>
-        <div class="blog-card-content">
-          <h3>MD5 Hashing nedir ?</h3>
-          <p>MD5, Message-Digest Algorithm 5'in kısaltmasıdır. MD5, bir veri kümesinin (genellikle bir dosya veya metin) benzersiz bir özetini oluşturmak için kullanılan bir kriptografik hash fonksiyonudur...</p>
-          <div class="blog-card-footer">
-            <a href="blog/md5-hashing-nedir.html">Devamını Oku</a>
-            <span>28 Şubat 2026</span>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">Barış<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <div class="dropdown">
+          <a href="#" class="drop-btn">Challenges <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+          <div class="dropdown-content">
+            <a href="./frontend-mentor/qr/index.html" target="_blank">QR Code</a>
+            <a href="./frontend-mentor/order-summary/index.html" target="_blank">Order Summary</a>
+            <a href="./frontend-mentor/product-preview-card/index.html" target="_blank">Product Preview</a>
+            <a href="./frontend-mentor/nft-preview-card/index.html" target="_blank">NFT Preview</a>
+            <a href="./frontend-mentor/fylo-data-storage/index.html" target="_blank">Fylo Data Storage</a>
+            <a href="./frontend-mentor/time-tracking-dashboard/index.html" target="_blank">Time Tracking</a>
+            <a href="./frontend-mentor/advice-generator-app/index.html" target="_blank">Advice Generator</a>
+            <a href="./frontend-mentor/blog-preview/index.html" target="_blank">Blog Preview</a>
+            <hr style="border: 0; height: 1px; background: var(--border); margin: 8px 0;">
+            <a href="./quiz/index.html" target="_blank">Quiz App</a>
           </div>
         </div>
       </div>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <header id="about" class="hero">
+    <div class="hero-content">
+      <p class="greeting">Hello, I'm</p>
+      <h1 class="name">Barış Taş.</h1>
+      <h2 class="title">I build things for the web.</h2>
+      <p class="bio">I'm a software developer passionate about building scalable, accessible, and human-centered digital products. I specialize in modern web technologies and continuous learning.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="https://github.com/tasbaris" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> GitHub Profile
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section bg-alt">
+    <div class="section-container">
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skill-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Backend & Mobile</h3>
+          <div class="skill-tags">
+            <span>PHP</span>
+            <span>C#</span>
+            <span>C++</span>
+            <span>Node.js</span>
+            <span>Flutter/Dart</span>
+            <span>MySQL</span>
+            <span>MsSQL</span>
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Workflows</h3>
+          <div class="skill-tags">
+            <span>Git & GitHub</span>
+            <span>Responsive Design</span>
+            <span>REST APIs</span>
+            <span>UI/UX Principles</span>
+            <span>Agile Methodologies</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <script src="./assets/js/func.js"></script>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="section-container">
+      <h2 class="section-title">Open Source Projects</h2>
+      <p class="section-subtitle" id="repo-count">Fetching latest repositories...</p>
+      <div class="projects-grid" id="github-repos">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/tasbaris" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/tas-baris/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <p>&copy; 2026 Barış Taş. Designed & built from scratch.</p>
+    </div>
+  </footer>
+
   <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
