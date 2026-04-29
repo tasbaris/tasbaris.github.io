@@ -14,9 +14,16 @@
     <div class="nav-container">
       <a href="#" class="brand">Barış<span>.</span></a>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <div class="dropdown">
+          <a href="#" class="drop-btn"><span data-i18n="nav_games">Games</span> <i class="fa-solid fa-gamepad" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+          <div class="dropdown-content">
+            <a href="./try-catch-errors/index.html" target="_blank" data-i18n="game_try_catch">Try Catch Errors</a>
+            <a href="./terminal-runner/index.html" target="_blank" data-i18n="game_terminal">Terminal Runner</a>
+          </div>
+        </div>
         <div class="dropdown">
           <a href="#" class="drop-btn">Challenges <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 4px;"></i></a>
           <div class="dropdown-content">
@@ -33,24 +40,55 @@
           </div>
         </div>
       </div>
-      <button class="mobile-menu-btn" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <button id="theme-toggle" style="background: transparent; border: none; color: var(--text-muted); font-size: 1.1rem; cursor: pointer; transition: color 0.2s; padding: 5px;">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="lang-toggle" style="background: transparent; border: none; color: var(--text-muted); font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: color 0.2s;">TR</button>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <header id="about" class="hero">
-    <div class="hero-content">
-      <p class="greeting">Hello, I'm</p>
-      <h1 class="name">Barış Taş.</h1>
-      <h2 class="title">I build things for the web.</h2>
-      <p class="bio">I'm a software developer passionate about building scalable, accessible, and human-centered digital products. I specialize in modern web technologies and continuous learning.</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="https://github.com/tasbaris" target="_blank" class="btn btn-outline">
-          <i class="fa-brands fa-github"></i> GitHub Profile
-        </a>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="greeting" data-i18n="hero_greeting">Hello, I'm</p>
+        <h1 class="name">Barış Taş.</h1>
+        <h2 class="title" data-i18n="hero_title">I build things for the web.</h2>
+        <p class="bio" data-i18n="hero_bio">I'm a software developer passionate about building scalable, accessible, and human-centered digital products. I specialize in modern web technologies and continuous learning.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_work">View My Work</a>
+          <a href="https://github.com/tasbaris" target="_blank" class="btn btn-outline">
+            <i class="fa-brands fa-github"></i> <span data-i18n="hero_btn_github">GitHub Profile</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="terminal-title">bash</div>
+          </div>
+          <div class="terminal-body">
+            <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {</div>
+            <div class="code-line indent-1"><span class="code-property">name</span>: <span class="code-string">'Barış Taş'</span>,</div>
+            <div class="code-line indent-1"><span class="code-property">role</span>: <span class="code-string">'Full Stack Developer'</span>,</div>
+            <div class="code-line indent-1"><span class="code-property">passions</span>: [<span class="code-string">'Code'</span>, <span class="code-string">'Logic'</span>, <span class="code-string">'Games'</span>],</div>
+            <div class="code-line indent-1"><span class="code-property">status</span>: <span class="code-string">'Always learning'</span></div>
+            <div class="code-line">};</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="code-comment">// Building interactive ecosystems...</span></div>
+            <div class="code-line"><span class="code-variable">developer</span>.<span class="code-function">build</span>(<span class="code-variable">future</span>);</div>
+            <div class="code-line-cursor">_</div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -58,10 +96,10 @@
   <!-- Skills Section -->
   <section id="skills" class="section bg-alt">
     <div class="section-container">
-      <h2 class="section-title">Technical Arsenal</h2>
+      <h2 class="section-title" data-i18n="skills_title">Technical Arsenal</h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>Frontend Development</h3>
+          <h3 data-i18n="skills_frontend">Frontend Development</h3>
           <div class="skill-tags">
             <span>HTML5</span>
             <span>CSS3</span>
@@ -70,7 +108,7 @@
           </div>
         </div>
         <div class="skill-category">
-          <h3>Backend & Mobile</h3>
+          <h3 data-i18n="skills_backend">Backend & Mobile</h3>
           <div class="skill-tags">
             <span>PHP</span>
             <span>C#</span>
@@ -83,7 +121,7 @@
           </div>
         </div>
         <div class="skill-category">
-          <h3>Tools & Workflows</h3>
+          <h3 data-i18n="skills_tools">Tools & Workflows</h3>
           <div class="skill-tags">
             <span>Git & GitHub</span>
             <span>Responsive Design</span>
@@ -99,7 +137,7 @@
   <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="section-container">
-      <h2 class="section-title">Open Source Projects</h2>
+      <h2 class="section-title" data-i18n="projects_title">Open Source Projects</h2>
       <p class="section-subtitle" id="repo-count">Fetching latest repositories...</p>
       <div class="projects-grid" id="github-repos">
         <!-- Injected via JS -->
@@ -114,10 +152,10 @@
         <a href="https://github.com/tasbaris" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/tas-baris/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
-      <p>&copy; 2026 Barış Taş. Designed & built from scratch.</p>
+      <p data-i18n="footer_text">&copy; 2026 Barış Taş. Designed & built from scratch.</p>
     </div>
   </footer>
-
+  <script src="./assets/js/i18n.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

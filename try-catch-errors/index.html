@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch Errors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div id="game-container">
+        <header id="hud">
+            <a href="../index.html" class="home-btn"><i class="fa-solid fa-house"></i> <span data-i18n="back_home">Home</span></a>
+            <div id="score-display"><span data-i18n="tce_score">SCORE: </span><span id="score">0</span></div>
+            <div id="high-score-display"><span data-i18n="tce_high_score">BEST: </span><span id="high-score">0</span></div>
+            <div id="integrity-display"><span data-i18n="tce_integrity">INTEGRITY: </span><span id="integrity">100</span>%</div>
+            <button id="lang-toggle" class="lang-btn">TR</button>
+        </header>
+
+        <div id="start-screen" class="screen active">
+            <h1 data-i18n="tce_title">TRY CATCH ERRORS</h1>
+            <p data-i18n="tce_desc">Errors are attacking your server! Quickly type the exact code/error to catch and destroy them.</p>
+            <div id="difficulty-selector" style="margin: 20px 0; display: flex; gap: 10px;">
+                <button class="diff-btn" data-diff="easy" data-i18n="diff_easy">EASY</button>
+                <button class="diff-btn active" data-diff="normal" data-i18n="diff_normal">NORMAL</button>
+                <button class="diff-btn" data-diff="hard" data-i18n="diff_hard">HARD</button>
+            </div>
+            <p class="blink" data-i18n="tce_start">Press 'ENTER' to Start</p>
+        </div>
+
+        <div id="game-over-screen" class="screen">
+            <h1 data-i18n="tce_gameover">SYSTEM CRASHED</h1>
+            <p><span data-i18n="tce_final_score">Caught Errors: </span><span id="final-score">0</span></p>
+            <p class="blink" data-i18n="tce_restart">Press 'ENTER' to Reboot</p>
+        </div>
+
+        <!-- The server base -->
+        <div id="server-base">[ localhost ]</div>
+        
+        <!-- Errors will be injected here -->
+        <div id="play-area"></div>
+
+        <!-- Mobile Keyboard -->
+        <div id="mobile-keyboard" class="hidden">
+            <div class="kb-row">
+                <button class="key">Q</button><button class="key">W</button><button class="key">E</button><button class="key">R</button><button class="key">T</button>
+                <button class="key">Y</button><button class="key">U</button><button class="key">I</button><button class="key">O</button><button class="key">P</button>
+            </div>
+            <div class="kb-row">
+                <button class="key">A</button><button class="key">S</button><button class="key">D</button><button class="key">F</button><button class="key">G</button>
+                <button class="key">H</button><button class="key">J</button><button class="key">K</button><button class="key">L</button>
+            </div>
+            <div class="kb-row">
+                <button class="key">Z</button><button class="key">X</button><button class="key">C</button><button class="key">V</button><button class="key">B</button>
+                <button class="key">N</button><button class="key">M</button><button class="key" id="key-enter">↵</button>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

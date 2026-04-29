@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div id="game-container">
+        <div id="header">
+            <a href="../index.html" class="home-btn" style="color: #33ff33; text-decoration: none; font-size: 1.2rem; margin-right: 15px;">[&lt; HOME]</a>
+            <div id="status" data-i18n="tr_status_online">STATUS: ONLINE</div>
+            <div>
+                <span data-i18n="tr_high_uptime">BEST UPTIME: </span><span id="high-score-val">0</span>ms | 
+                <span data-i18n="tr_uptime">UPTIME: </span><span id="score-val">0</span>ms
+            </div>
+            <button id="lang-toggle" class="lang-btn">TR</button>
+        </div>
+
+        <div id="start-screen" class="screen active">
+            <h1 data-i18n="tr_title">TERMINAL RUNNER</h1>
+            <p data-i18n="tr_desc">Run from the errors! Press 'SPACE' or click to jump.</p>
+            <p class="blink" data-i18n="tr_start">Press 'SPACE' to Start</p>
+        </div>
+
+        <div id="game-over-screen" class="screen">
+            <h1 data-i18n="tr_gameover">KERNEL PANIC</h1>
+            <p><span data-i18n="tr_final_uptime">Connection Lost. Uptime: </span><span id="final-score">0</span>ms</p>
+            <p class="blink" data-i18n="tr_restart">Press 'SPACE' to Reboot</p>
+        </div>
+
+        <div id="countdown-screen" class="screen">
+            <h1 id="countdown-text" style="color: #33ff33; font-size: 6rem; text-shadow: 0 0 15px #33ff33;">3</h1>
+        </div>
+
+        <div id="game-area">
+            <div id="ground"></div>
+            <div id="player">>_</div>
+        </div>
+    </div>
+    <script src="../assets/js/i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
