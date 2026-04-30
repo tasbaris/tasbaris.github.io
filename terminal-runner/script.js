@@ -221,7 +221,7 @@ function jump() {
     }
 }
 
-// Input handling
+// Global input listener
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space' || e.code === 'ArrowUp') {
         e.preventDefault();
@@ -229,6 +229,9 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-gameArea.addEventListener('pointerdown', (e) => {
+document.addEventListener('pointerdown', (e) => {
+    // Ignore if clicking on home button or language toggle
+    if (e.target.closest('.home-btn') || e.target.closest('.lang-btn')) return;
+    
     jump();
 });
