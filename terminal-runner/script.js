@@ -229,9 +229,24 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-document.addEventListener('pointerdown', (e) => {
+function handleInteraction(e) {
     // Ignore if clicking on home button or language toggle
     if (e.target.closest('.home-btn') || e.target.closest('.lang-btn')) return;
     
+    // Prevent default to stop scrolling/zooming on jump taps
+    if (e.type === 'touchstart') {
+        e.preventDefault();
+    }
+    
     jump();
+}
+
+// Touch events for mobile
+document.addEventListener('touchstart', handleInteraction, { passive: false });
+
+// Mouse events for desktop (only if touch is not supported to avoid double trigger)
+document.addEventListener('mousedown', (e) => {
+    if (!('ontouchstart' in window || navigator.maxTouchPoints > 0)) {
+        handleInteraction(e);
+    }
 });

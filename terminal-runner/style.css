@@ -38,6 +38,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    touch-action: manipulation;
 }
 
 #header {
